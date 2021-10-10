@@ -11,24 +11,24 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts(
-  'https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js'
-);
+// importScripts(
+//   'https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js'
+// );
 
-importScripts('/KK/precache-manifest.f9d6f37927d584f5b66b794e696e90b3.js');
+// importScripts('/KK/precache-manifest.f9d6f37927d584f5b66b794e696e90b3.js');
 
-workbox.core.setCacheNameDetails({ prefix: 'volunteers-database' });
+// workbox.core.setCacheNameDetails({ prefix: 'volunteers-database' });
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
+// self.addEventListener('message', (event) => {
+//   if (event.data && event.data.type === 'SKIP_WAITING') {
+//     self.skipWaiting();
+//   }
+// });
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
  * requests for URLs in the manifest.
  * See https://goo.gl/S9QRab
  */
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+// self.__precacheManifest = [].concat(self.__precacheManifest || []);
+// workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
