@@ -11,13 +11,13 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
 importScripts(
-  "/precache-manifest.f9d6f37927d584f5b66b794e696e90b3.js"
+  'https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js'
 );
 
-workbox.core.setCacheNameDetails({prefix: "volunteers-database"});
+importScripts('/KK/precache-manifest.f9d6f37927d584f5b66b794e696e90b3.js');
+
+workbox.core.setCacheNameDetails({ prefix: 'volunteers-database' });
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
